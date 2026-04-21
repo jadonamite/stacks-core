@@ -20,17 +20,17 @@ This package requires Stacks core libraries as **peer dependencies**. You must i
 
 ### npm
 ```bash
-npm install @yourorg/stacks-core @stacks/network @stacks/transactions
+npm install @fundxgrid/stacks-core @stacks/network @stacks/transactions
 ```
 
 ### yarn
 ```bash
-yarn add @yourorg/stacks-core @stacks/network @stacks/transactions
+yarn add @fundxgrid/stacks-core @stacks/network @stacks/transactions
 ```
 
 ### pnpm
 ```bash
-pnpm add @yourorg/stacks-core @stacks/network @stacks/transactions
+pnpm add @fundxgrid/stacks-core @stacks/network @stacks/transactions
 ```
 
 ## 💻 Quick Start
@@ -38,7 +38,7 @@ pnpm add @yourorg/stacks-core @stacks/network @stacks/transactions
 Initialize the core client by passing in your desired network configuration. The client will automatically resolve the correct Hiro API URLs.
 
 ```typescript
-import { StacksClient } from '@yourorg/stacks-core';
+import { StacksClient } from '@fundxgrid/stacks-core';
 
 // Initialize for Mainnet
 const client = new StacksClient({ network: 'mainnet' });
@@ -57,7 +57,7 @@ const devClient = new StacksClient({
 The client provides abstracted methods for standard on-chain queries. Always ensure you are handling potential network errors in production environments.
 
 ```typescript
-import { StacksClient } from '@yourorg/stacks-core';
+import { StacksClient } from '@fundxgrid/stacks-core';
 
 async function fetchUserBalance(walletAddress: string) {
   const client = new StacksClient({ network: 'mainnet' });
@@ -83,7 +83,7 @@ The primary class for interacting with the Stacks network.
 ### `NETWORKS`
 A constant record containing the default API URLs for Hiro's public nodes.
 ```typescript
-import { NETWORKS } from '@yourorg/stacks-core';
+import { NETWORKS } from '@fundxgrid/stacks-core';
 
 console.log(NETWORKS.testnet); // '[https://api.testnet.hiro.so](https://api.testnet.hiro.so)'
 ```
@@ -98,7 +98,7 @@ Exported interfaces for strict typing in consumer SDKs:
 To build this package from source:
 
 ```bash
-git clone [https://github.com/yourorg/stacks-sdks.git](https://github.com/yourorg/stacks-sdks.git)
+git clone https://github.com/FundX-Grid/stacks-sdks.git
 cd stacks-sdks/stacks-core
 npm install
 npm run build
@@ -106,4 +106,4 @@ npm run build
 
 ## 📄 License
 
-MIT © [Your Name / Organization]
+MIT © jadonamite

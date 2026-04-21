@@ -20,17 +20,17 @@ This package requires Stacks core libraries as **peer dependencies**. You must i
 
 ### npm
 ```bash
-npm install @fundxgrid/stacks-core @stacks/network @stacks/transactions
+npm install @fundx-grid/stacks-core @stacks/network @stacks/transactions
 ```
 
 ### yarn
 ```bash
-yarn add @fundxgrid/stacks-core @stacks/network @stacks/transactions
+yarn add @fundx-grid/stacks-core @stacks/network @stacks/transactions
 ```
 
 ### pnpm
 ```bash
-pnpm add @fundxgrid/stacks-core @stacks/network @stacks/transactions
+pnpm add @fundx-grid/stacks-core @stacks/network @stacks/transactions
 ```
 
 ## 💻 Quick Start
@@ -57,7 +57,7 @@ const devClient = new StacksClient({
 The client provides abstracted methods for standard on-chain queries. Always ensure you are handling potential network errors in production environments.
 
 ```typescript
-import { StacksClient } from '@fundxgrid/stacks-core';
+import { StacksClient } from '@fundx-grid/stacks-core';
 
 async function fetchUserBalance(walletAddress: string) {
   const client = new StacksClient({ network: 'mainnet' });

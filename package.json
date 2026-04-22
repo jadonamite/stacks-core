@@ -1,5 +1,5 @@
 {
-  "name": "@fundxgrid/stacks-core",
+  "name": "@jadonamite/stacks-core",
   "version": "1.0.2",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
